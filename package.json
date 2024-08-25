@@ -1,0 +1,29 @@
+{
+  "name": "dummy",
+  "version": "0.0.1",
+  "description": "repo to keep random files and scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-prepush": {
+    "base": "master",
+    "tasks": {
+      "*.js": [
+        "node_modules/.bin/eslint"
+      ]
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-prepush": "^3.0.0"
+  }
+}
