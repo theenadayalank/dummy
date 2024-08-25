@@ -4,7 +4,8 @@
   "description": "repo to keep random files and scripts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "lint-prepush": {
     "base": "main",
